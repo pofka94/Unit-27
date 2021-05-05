@@ -1,0 +1,9 @@
+{% if page_list %}
+    <ul>
+    {% for title in page_list %}
+        <li><a href="/wiki/{{ title.id }}/">{{ title.title }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No links are available.</p>
+{% endif %}
